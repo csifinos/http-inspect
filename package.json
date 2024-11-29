@@ -10,6 +10,7 @@
     "package": "pkg ."
   },
   "pkg": {
+    "assets": "package.json",
     "targets": [ "node18-linux-arm64", "node18-macos-arm64" ],
     "outputPath": "dist"
   },
