@@ -6,9 +6,19 @@
   "bin": {
     "http-inspect": "src/index.js"
   },
+  "scripts": {
+    "package": "pkg ."
+  },
+  "pkg": {
+    "targets": [ "node18-linux-arm64", "node18-macos-arm64" ],
+    "outputPath": "dist"
+  },
   "dependencies": {
-    "minimist": "1.2.6",
-    "http-proxy": "1.18.1"
+    "http-proxy": "1.18.1",
+    "minimist": "1.2.6"
+  },
+  "devDependencies": {
+    "pkg": "5.8.1"
   },
   "author": "Christos Sifinos",
   "license": "MIT"
