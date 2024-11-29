@@ -1,25 +1,39 @@
 {
-  "name": "http-inspect",
+  "name": "@csifinos/http-inspect",
   "version": "1.0.0",
   "description": "A lightweight CLI tool for logging and inspecting raw HTTP requests and responses for development purposes.",
-  "main": "http-inspect.js",
+  "main": "src/index.js",
   "bin": {
-    "http-inspect": "src/index.js"
+    "http-inspect": "bin/http-inspect"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "package": "pkg ."
+    "package": "pkg . && node scripts/package.js"
   },
   "pkg": {
     "assets": "package.json",
-    "targets": [ "node18-linux-arm64", "node18-macos-arm64" ],
-    "outputPath": "dist"
+    "targets": [
+      "node18-alpine-x64",
+      "node18-linux-arm64",
+      "node18-linux-x64",
+      "node18-macos-arm64",
+      "node18-macos-x64",
+      "node18-win-arm64",
+      "node18-win-x64"
+    ],
+    "outputPath": "build"
   },
   "dependencies": {
     "http-proxy": "1.18.1",
     "minimist": "1.2.6"
   },
   "devDependencies": {
-    "pkg": "5.8.1"
+    "pkg": "5.8.1",
+    "rimraf": "6.0.1",
+    "tar": "7.4.3"
   },
   "author": "Christos Sifinos",
   "license": "MIT"
