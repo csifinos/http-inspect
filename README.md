@@ -1,6 +1,6 @@
 # http-inspect
 
-![npm](https://img.shields.io/npm/v/@csifinos/http-inspect)
+![node-lts](https://img.shields.io/node/v-lts/%40csifinos%2Fhttp-inspect)
 ![license](https://img.shields.io/github/license/csifinos/http-inspect)
 ![version](https://img.shields.io/github/package-json/v/csifinos/http-inspect)
 
