@@ -22,7 +22,7 @@ http-inspect is not a security tool. Use it only for testing your own services o
 Install globally using npm:
 
 ```bash
-npm install -g http-inspect
+npm install -g @csifinos/http-inspect
 ```
 
 ### How to Use
@@ -41,7 +41,6 @@ Run the tool from the command line:
 
   Example:
     http-inspect --port 3000 --target http://example.com
-  `);
 ```
 
 ### License
