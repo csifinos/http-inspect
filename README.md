@@ -1,5 +1,9 @@
 # http-inspect
 
+![npm](https://img.shields.io/npm/v/@csifinos/http-inspect)
+![license](https://img.shields.io/github/license/csifinos/http-inspect)
+![version](https://img.shields.io/github/package-json/v/csifinos/http-inspect)
+
 **http-inspect** is a simple command-line tool that logs and inspects HTTP requests and responses in real-time.
 It's useful for debugging and monitoring HTTP traffic during development.
 

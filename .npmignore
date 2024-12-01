@@ -6,3 +6,4 @@ dist
 .nmvrc
 scripts
 .github
+.nvmrc
